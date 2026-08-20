@@ -17,16 +17,30 @@ header{display:flex;align-items:center;gap:12px;margin-bottom:16px}.hamb{width:4
 .profile{display:flex;flex-direction:column;align-items:center;text-align:center;padding:8px 0 16px}.avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;background:var(--panel2);border:2px solid var(--border)}.photoBtn{margin-top:8px;background:transparent;color:var(--accent);border:0}.streak{margin-top:10px;background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:10px 16px;width:100%}.streak strong{font-size:1.3rem}
 .menuTitle{color:var(--muted);font-size:.76rem;text-transform:uppercase;margin:15px 5px 7px}.menuBtn{width:100%;text-align:left;border:0;background:transparent;color:var(--text);padding:12px;border-radius:12px}.menuBtn:hover{background:var(--panel)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:11px}.label{font-size:.75rem;color:var(--muted)}.value{font-size:1.25rem;font-weight:800}.progress{height:10px;background:var(--panel2);border-radius:99px;overflow:hidden;margin:11px 0 17px}.progress div{height:100%;background:var(--accent);transition:.25s}
-.add{display:flex;gap:8px;margin-bottom:18px}input[type=text]{width:100%;min-width:0;background:var(--panel);border:1px solid var(--border);color:var(--text);border-radius:14px;padding:13px}.primary{border:0;border-radius:14px;background:var(--accent);color:#08111f;padding:0 16px;font-weight:800}.sect{display:flex;justify-content:space-between;align-items:center;margin:17px 0 8px}.sect h2{font-size:1rem;margin:0}.muted{color:var(--muted);font-size:.82rem}
+.add{display:flex;gap:8px;margin-bottom:18px}input[type=text],input[type=password],input[type=number]{width:100%;min-width:0;background:var(--panel);border:1px solid var(--border);color:var(--text);border-radius:14px;padding:13px}.primary{border:0;border-radius:14px;background:var(--accent);color:#08111f;padding:0 16px;font-weight:800}.sect{display:flex;justify-content:space-between;align-items:center;margin:17px 0 8px}.sect h2{font-size:1rem;margin:0}.muted{color:var(--muted);font-size:.82rem}
 .task{display:flex;align-items:center;gap:11px;background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:12px;margin-bottom:8px}.check{appearance:none;width:25px;height:25px;border:2px solid #727985;border-radius:8px;flex:none}.check:checked{background:var(--good);border-color:var(--good)}.check:checked:after{content:"✓";display:grid;place-items:center;color:#082016;font-weight:900}.task.done .txt{text-decoration:line-through;opacity:.65}.taskbody{flex:1;min-width:0}.time{font-size:.73rem;color:var(--muted);margin-top:3px}.x{border:0;background:transparent;color:var(--muted);padding:8px}.empty{text-align:center;color:var(--muted);border:1px dashed var(--border);border-radius:16px;padding:25px 10px}.summary,.card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:14px;margin-top:14px}
 .page{display:none}.page.active{display:block}.badgeGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.badge{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:15px;text-align:center}.badge.locked{opacity:.38}.badgeIcon{font-size:2rem}.badgeName{font-weight:700;margin-top:5px}.badgeDesc{font-size:.78rem;color:var(--muted);margin-top:3px}
-.listCard{display:flex;justify-content:space-between;align-items:center;background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:14px;margin-bottom:9px}.listCard button{border:0;background:transparent;color:var(--accent)}.back{border:0;background:transparent;color:var(--accent);padding:5px 0;margin-bottom:12px}
 .toast{position:fixed;z-index:100;top:calc(15px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);background:var(--accent);color:#08111f;border-radius:99px;padding:10px 16px;font-weight:900;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:translateX(-50%) translateY(5px)}.confetti{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}.piece{position:absolute;top:12%;animation:fly .9s ease-out forwards}@keyframes fly{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
-dialog{background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:18px;width:min(420px,90vw);padding:18px}dialog::backdrop{background:#0009}dialog h3{margin-top:0}.dialogBtns{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}.secondary{border:1px solid var(--border);background:var(--panel2);color:var(--text);border-radius:12px;padding:10px 13px}
+dialog{background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:18px;width:min(420px,90vw);padding:18px}dialog::backdrop{background:#0009}dialog h3{margin-top:0}.dialogBtns{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}.secondary{border:1px solid var(--border);background:var(--panel2);color:var(--text);border-radius:12px;padding:10px 13px}.danger{color:var(--danger)}
+.lockScreen{position:fixed;inset:0;background:var(--bg);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px}.lockScreen.open{display:flex}.lockCard{width:min(390px,100%);background:var(--panel);border:1px solid var(--border);border-radius:22px;padding:22px}.lockIcon{text-align:center;font-size:2.5rem}.lockCard h2{text-align:center;margin:10px 0 4px}.lockCard p{text-align:center;color:var(--muted);font-size:.86rem}.pinRow{display:flex;gap:8px;margin-top:14px}.pinRow input{flex:1}.securityNote{font-size:.78rem;color:var(--muted);line-height:1.4;margin-top:10px}
 </style>
 </head>
 <body>
 <div id="toast" class="toast"></div><div id="confetti" class="confetti"></div>
+
+<div id="lockScreen" class="lockScreen">
+  <div class="lockCard">
+    <div class="lockIcon">🔒</div>
+    <h2>Daily Wins</h2>
+    <p>Enter your PIN to open your lists.</p>
+    <div class="pinRow">
+      <input id="unlockPin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN">
+      <button id="unlockBtn" class="primary">Unlock</button>
+    </div>
+    <div id="unlockError" class="securityNote"></div>
+  </div>
+</div>
+
 <div id="backdrop" class="drawerBackdrop"></div>
 <aside id="drawer" class="drawer">
   <div class="profile">
@@ -43,6 +57,9 @@ dialog{background:var(--panel);color:var(--text);border:1px solid var(--border);
   <div class="menuTitle">Progress</div>
   <button class="menuBtn nav" data-page="badges">🏆 Badges</button>
   <button class="menuBtn nav" data-page="history">📅 Productivity History</button>
+  <div class="menuTitle">Privacy</div>
+  <button id="pinMenu" class="menuBtn">🔐 Set / Change PIN</button>
+  <button id="lockNow" class="menuBtn">🔒 Lock now</button>
 </aside>
 
 <main class="app">
@@ -65,15 +82,62 @@ dialog{background:var(--panel);color:var(--text);border:1px solid var(--border);
 
 <dialog id="listDialog"><h3>Create a new list</h3><input id="listName" type="text" placeholder="List name (e.g. Groceries)"><div class="dialogBtns"><button id="cancelList" class="secondary">Cancel</button><button id="createList" class="primary" style="padding:10px 14px">Create</button></div></dialog>
 
+<dialog id="pinDialog">
+  <h3>App PIN</h3>
+  <div id="pinCurrentWrap" style="display:none;margin-bottom:10px"><input id="currentPin" type="password" inputmode="numeric" maxlength="8" placeholder="Current PIN"></div>
+  <input id="newPin" type="password" inputmode="numeric" maxlength="8" placeholder="New 4–8 digit PIN">
+  <div class="securityNote">This is a privacy lock for casual access. Your data stays only in this browser/device and is not uploaded to GitHub.</div>
+  <div class="dialogBtns">
+    <button id="removePin" class="secondary danger" style="display:none">Remove PIN</button>
+    <button id="cancelPin" class="secondary">Cancel</button>
+    <button id="savePin" class="primary" style="padding:10px 14px">Save</button>
+  </div>
+</dialog>
+
 <script>
-const START=["Dry and put away dishes","Fold laundry","Take out trash","Clean Turbo's litter box","Teeth whitening strips","Check 3D printer","Make peach cobbler","Put steering wheel wrap on Miata","Clean bike","Check mail","Trim Turbo's claws","Get boating license","Clear Miata drains","Set up website for FlightRefine","Set up emails for FlightRefine","Set up phone number for FlightRefine","Edit and post pictures and videos from this weekend","Close Harley credit card"];
-const K="dailyWins.v2"; const day=()=>new Date().toISOString().slice(0,10);
-let state=JSON.parse(localStorage.getItem(K)||"null")||{tasks:START.map((text,i)=>({id:Date.now()+i,text,done:false,time:null})),lists:[],history:[],activeDays:[],profile:null};
+const K="dailyWins.v2";
+const day=()=>new Date().toISOString().slice(0,10);
+
+// No personal tasks are embedded in the public app source.
+let state=JSON.parse(localStorage.getItem(K)||"null")||{tasks:[],lists:[],history:[],activeDays:[],profile:null,pinHash:null,pinSalt:null};
+if(state.pinHash===undefined){state.pinHash=null;state.pinSalt=null}
 let currentList=null;
+let hiddenAt=null;
 const $=s=>document.querySelector(s); const save=()=>localStorage.setItem(K,JSON.stringify(state));
-function streak(){let days=[...new Set(state.activeDays)].sort().reverse(),n=0,d=new Date();for(let i=0;;i++){let k=d.toISOString().slice(0,10);if(days.includes(k))n++;else if(i===0){d.setDate(d.getDate()-1);continue}else break;d.setDate(d.getDate()-1)}return n}
+
+function streak(){let days=[...new Set(state.activeDays||[])].sort().reverse(),n=0,d=new Date();for(let i=0;;i++){let k=d.toISOString().slice(0,10);if(days.includes(k))n++;else if(i===0){d.setDate(d.getDate()-1);continue}else break;d.setDate(d.getDate()-1)}return n}
 function toast(t){let e=$("#toast");e.textContent=t;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),1100)}
 function celebrate(){toast(["Nice! ✓","Huge W 🏆","LET'S GO 😎","Keep it rolling 🚀","Another one down 🔥"][Math.floor(Math.random()*5)]);let l=$("#confetti");l.innerHTML="";for(let i=0;i<25;i++){let p=document.createElement("span");p.className="piece";p.textContent=["●","■","▲","★"][Math.floor(Math.random()*4)];p.style.left=(38+Math.random()*24)+"%";p.style.color="var(--accent)";p.style.setProperty("--x",((Math.random()-.5)*380)+"px");p.style.setProperty("--y",(100+Math.random()*250)+"px");p.style.setProperty("--r",(Math.random()*600)+"deg");l.appendChild(p)}setTimeout(()=>l.innerHTML="",1000)}
+
+async function hashPin(pin,salt){
+  const enc=new TextEncoder().encode(salt+":"+pin);
+  const buf=await crypto.subtle.digest("SHA-256",enc);
+  return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+function makeSalt(){
+  const arr=new Uint8Array(16); crypto.getRandomValues(arr);
+  return [...arr].map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+function lockApp(){
+  if(!state.pinHash)return;
+  closeDrawer();
+  $("#unlockPin").value="";
+  $("#unlockError").textContent="";
+  $("#lockScreen").classList.add("open");
+  setTimeout(()=>$("#unlockPin").focus(),50);
+}
+async function unlockApp(){
+  const pin=$("#unlockPin").value.trim();
+  const h=await hashPin(pin,state.pinSalt||"");
+  if(h===state.pinHash){
+    $("#lockScreen").classList.remove("open");
+    $("#unlockError").textContent="";
+    $("#unlockPin").value="";
+  }else{
+    $("#unlockError").textContent="Incorrect PIN.";
+  }
+}
+
 const badges=[
  ["first","🌟","First Win","Complete your first task",()=>completedTotal()>=1],
  ["five","✋","High Five","Complete 5 tasks",()=>completedTotal()>=5],
@@ -85,27 +149,71 @@ const badges=[
  ["lists","🗂️","Organized","Create 3 custom lists",()=>state.lists.length>=3]
 ];
 function completedTotal(){return state.history.reduce((a,h)=>a+h.done,0)+state.tasks.filter(t=>t.done).length}
+
 function render(){
  $("#date").textContent=new Date().toLocaleDateString([],{weekday:"long",month:"long",day:"numeric"});
  let done=state.tasks.filter(t=>t.done),todo=state.tasks.filter(t=>!t.done),pct=state.tasks.length?Math.round(done.length/state.tasks.length*100):0,s=streak();
  $("#doneStat").textContent=done.length;$("#leftStat").textContent=todo.length;$("#streakStat").textContent="🔥 "+s;$("#menuStreak").textContent=s;$("#bar").style.width=pct+"%";$("#todoN").textContent=todo.length+" left";$("#doneN").textContent=done.length+" completed";
- $("#summary").textContent=done.length?`${done.length} task${done.length===1?"":"s"} finished today — ${pct}% of your list.`:"Start with one easy win and build momentum.";
- renderTasks(todo,$("#todoList"),false);renderTasks(done,$("#doneList"),true);renderDrawer();renderBadges();renderHistory();renderCustom(); if(state.profile)$("#avatar").src=state.profile;else $("#avatar").src="icon-192.png"; save();
+ $("#summary").textContent=done.length?`${done.length} task${done.length===1?"":"s"} finished today — ${pct}% of your list.`:"Add one small task and get your first win.";
+ renderTasks(todo,$("#todoList"),false);renderTasks(done,$("#doneList"),true);renderDrawer();renderBadges();renderHistory();renderCustom();
+ $("#avatar").src=state.profile||"icon-192.png";
+ $("#pinMenu").textContent=state.pinHash?"🔐 Change PIN":"🔐 Set PIN";
+ $("#lockNow").style.display=state.pinHash?"block":"none";
+ save();
 }
-function renderTasks(arr,box,isDone){box.innerHTML="";if(!arr.length){box.innerHTML=`<div class="empty">${isDone?"Your wins will collect here.":"Nothing left here 🎉"}</div>`;return}arr.forEach(t=>{let r=document.createElement("div");r.className="task"+(t.done?" done":"");let c=document.createElement("input");c.type="checkbox";c.className="check";c.checked=t.done;c.onchange=()=>{t.done=c.checked;t.time=c.checked?new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"}):null;if(c.checked){state.activeDays.push(day());celebrate()}render()};let b=document.createElement("div");b.className="taskbody";b.innerHTML=`<div class="txt"></div>${t.time?`<div class="time">Completed ${t.time}</div>`:""}`;b.querySelector(".txt").textContent=t.text;let x=document.createElement("button");x.className="x";x.textContent="✕";x.onclick=()=>{state.tasks=state.tasks.filter(q=>q.id!==t.id);render()};r.append(c,b,x);box.append(r)})}
+
+function renderTasks(arr,box,isDone){box.innerHTML="";if(!arr.length){box.innerHTML=`<div class="empty">${isDone?"Your wins will collect here.":"No tasks yet. Add one above."}</div>`;return}arr.forEach(t=>{let r=document.createElement("div");r.className="task"+(t.done?" done":"");let c=document.createElement("input");c.type="checkbox";c.className="check";c.checked=t.done;c.onchange=()=>{t.done=c.checked;t.time=c.checked?new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"}):null;if(c.checked){state.activeDays.push(day());celebrate()}render()};let b=document.createElement("div");b.className="taskbody";b.innerHTML=`<div class="txt"></div>${t.time?`<div class="time">Completed ${t.time}</div>`:""}`;b.querySelector(".txt").textContent=t.text;let x=document.createElement("button");x.className="x";x.textContent="✕";x.onclick=()=>{state.tasks=state.tasks.filter(q=>q.id!==t.id);render()};r.append(c,b,x);box.append(r)})}
 function renderDrawer(){let box=$("#drawerLists");box.innerHTML="";state.lists.forEach(l=>{let b=document.createElement("button");b.className="menuBtn";b.textContent="• "+l.name;b.onclick=()=>{currentList=l.id;show("custom",l.name)};box.append(b)})}
 function renderBadges(){let box=$("#badgeGrid"),earned=0;box.innerHTML="";badges.forEach(b=>{let ok=b[4]();if(ok)earned++;let e=document.createElement("div");e.className="badge"+(ok?"":" locked");e.innerHTML=`<div class="badgeIcon">${b[1]}</div><div class="badgeName">${b[2]}</div><div class="badgeDesc">${ok?"Unlocked ✓":b[3]}</div>`;box.append(e)});$("#badgeCount").textContent=earned+"/"+badges.length+" unlocked"}
 function renderHistory(){let box=$("#historyList");box.innerHTML=state.history.length?"":"<div class='empty'>No archived days yet.</div>";state.history.forEach(h=>{let d=document.createElement("div");d.className="card";d.innerHTML=`<strong>${new Date(h.date+"T12:00").toLocaleDateString([],{weekday:"short",month:"short",day:"numeric"})}</strong><div class="muted">${h.done}/${h.total} tasks completed</div>`;box.append(d)})}
 function renderCustom(){if(!currentList)return;let l=state.lists.find(x=>x.id===currentList);if(!l)return;let box=$("#customItems");box.innerHTML="";if(!l.items.length)box.innerHTML="<div class='empty'>This list is empty.</div>";l.items.forEach(i=>{let r=document.createElement("div");r.className="task"+(i.done?" done":"");let c=document.createElement("input");c.type="checkbox";c.className="check";c.checked=i.done;c.onchange=()=>{i.done=c.checked;if(c.checked)celebrate();render()};let b=document.createElement("div");b.className="taskbody txt";b.textContent=i.text;let x=document.createElement("button");x.className="x";x.textContent="✕";x.onclick=()=>{l.items=l.items.filter(q=>q.id!==i.id);render()};r.append(c,b,x);box.append(r)})}
 function show(id,title){document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));$("#"+id).classList.add("active");$("#title").textContent=title||({"today":"Today's To-Do List","badges":"Badges","history":"Productivity History"}[id]);closeDrawer();render()}
 function openDrawer(){$("#drawer").classList.add("open");$("#backdrop").classList.add("open")}function closeDrawer(){$("#drawer").classList.remove("open");$("#backdrop").classList.remove("open")}
+
 $("#hamb").onclick=openDrawer;$("#backdrop").onclick=closeDrawer;document.querySelectorAll(".nav").forEach(b=>b.onclick=()=>show(b.dataset.page));
 function addToday(){let v=$("#taskInput").value.trim();if(!v)return;state.tasks.push({id:Date.now(),text:v,done:false,time:null});$("#taskInput").value="";render()}$("#addTask").onclick=addToday;$("#taskInput").onkeydown=e=>{if(e.key==="Enter")addToday()};
 $("#newListMenu").onclick=()=>{$("#listDialog").showModal();$("#listName").focus()};$("#cancelList").onclick=()=>$("#listDialog").close();$("#createList").onclick=()=>{let n=$("#listName").value.trim();if(!n)return;let l={id:Date.now(),name:n,items:[]};state.lists.push(l);currentList=l.id;$("#listName").value="";$("#listDialog").close();show("custom",n)};
 function addCustom(){let l=state.lists.find(x=>x.id===currentList),v=$("#customInput").value.trim();if(!l||!v)return;l.items.push({id:Date.now(),text:v,done:false});$("#customInput").value="";render()}$("#customAdd").onclick=addCustom;$("#customInput").onkeydown=e=>{if(e.key==="Enter")addCustom()};
 $("#finishDay").onclick=()=>{let done=state.tasks.filter(t=>t.done).length,total=state.tasks.length;state.history.unshift({date:day(),done,total});state.tasks=state.tasks.filter(t=>!t.done).map(t=>({...t,time:null}));toast("Day archived 📅");render()};
 $("#photoBtn").onclick=()=>$("#photoInput").click();$("#photoInput").onchange=e=>{let f=e.target.files[0];if(!f)return;let reader=new FileReader();reader.onload=()=>{state.profile=reader.result;render()};reader.readAsDataURL(f)};
+
+$("#pinMenu").onclick=()=>{
+  closeDrawer();
+  $("#currentPin").value="";$("#newPin").value="";
+  $("#pinCurrentWrap").style.display=state.pinHash?"block":"none";
+  $("#removePin").style.display=state.pinHash?"inline-block":"none";
+  $("#pinDialog").showModal();
+};
+$("#cancelPin").onclick=()=>$("#pinDialog").close();
+$("#savePin").onclick=async()=>{
+  const newPin=$("#newPin").value.trim();
+  if(!/^\d{4,8}$/.test(newPin)){toast("Use a 4–8 digit PIN");return}
+  if(state.pinHash){
+    const cur=$("#currentPin").value.trim();
+    const ch=await hashPin(cur,state.pinSalt||"");
+    if(ch!==state.pinHash){toast("Current PIN is incorrect");return}
+  }
+  const salt=makeSalt();
+  state.pinSalt=salt;state.pinHash=await hashPin(newPin,salt);
+  save();$("#pinDialog").close();toast("PIN saved 🔐");render();
+};
+$("#removePin").onclick=async()=>{
+  const cur=$("#currentPin").value.trim();
+  const ch=await hashPin(cur,state.pinSalt||"");
+  if(ch!==state.pinHash){toast("Current PIN is incorrect");return}
+  state.pinHash=null;state.pinSalt=null;save();$("#pinDialog").close();toast("PIN removed");render();
+};
+$("#lockNow").onclick=lockApp;
+$("#unlockBtn").onclick=unlockApp;
+$("#unlockPin").onkeydown=e=>{if(e.key==="Enter")unlockApp()};
+
+document.addEventListener("visibilitychange",()=>{
+  if(document.hidden){hiddenAt=Date.now()}
+  else if(state.pinHash && hiddenAt && Date.now()-hiddenAt>30000) lockApp();
+});
+
 render();
+if(state.pinHash) lockApp();
 if("serviceWorker"in navigator)navigator.serviceWorker.register("./service-worker.js").catch(()=>{});
 </script>
 </body></html>
